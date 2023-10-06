@@ -63,3 +63,30 @@ If nothing else is specified, the values are labeled with their index number. Fi
 
 This label can be used to access a specified value
 
+print(myvar[0])
+With the index argument, you can name your own labels.
+
+import pandas as pd
+a = [1, 7, 2]
+myvar = pd.Series(a, index = ["x", "y", "z"])
+print(myvar)
+
+Key/value objects as series 
+you can also use a key/value object like a dictionary , when creating a series
+
+import pandas as pd
+calories = { 'day1' : 420 , 'day2':299 , ; 'day3' : 390}
+myvar  = pd.series(calories)
+print(myvar)
+
+Now we will create DataFrame from two series :
+
+data = { 'calories':[420,234,223],
+          'duration':[30,34,25]
+          }
+myvar = pd.DataFrame(data)
+print(myvar)
+
+
+
+
