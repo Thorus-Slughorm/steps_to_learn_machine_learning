@@ -449,3 +449,26 @@ Good Correlation:
 Bad Correlation:
 "Duration" and "Maxpulse" got a 0.009403 correlation, which is a very bad correlation, meaning that we can not predict the max pulse by just looking at the duration of the work out, and vice versa.
 
+
+::>> Pandas Plotting ::>>
+
+for plotting graph plot() ;
+import pandas as pd 
+import matplotlib.pyplot as plt 
+df = pd.read_csv('data.csv')
+df.plot()
+plt.show()
+
+# Scatter plot ":
+A scatter plot needs x and y axis :
+kind ='scatter'
+
+code ::>>
+>> import pandas as pd
+>> import matplotlib.pyplot as plt
+>> df = pd.read_csv('data.csv')
+>> df.plot(kind = 'scatter' , x = 'duration'  y = 'calories' )
+>> plt.show()
+
+
+
